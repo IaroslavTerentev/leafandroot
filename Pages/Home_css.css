@@ -34,12 +34,14 @@ body {
 }
 .navbar a {
     color: rgb(255, 255, 255);
-    padding: 14px 20px;
+    padding: 0px 20px;
     text-decoration: none;
-    display: inline-block;
     font-family: Garamond, serif;
     align-self: center;
     transition: background-color 0.5s ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .navbar a:hover {
     background-color: #2c6027;
@@ -166,6 +168,7 @@ footer {
         transform: translateX(0px);
     }
 }
+
 
 .woman-image img{
     width: 100%;
@@ -355,4 +358,98 @@ transition: background-color 0.5s ease;
     line-height: 1.1;
     margin: 0 0 25px;
 }
+.heading2#certifications {
+    margin-left:50px;
+    margin-right: 350px;
+}
+.heading3{
+    display: flex;
+    font-weight: normal;
+    font-size: 64px;
+    font-family: Garamond, serif;
+    margin-left:50px;
+    animation: slideRight 2s ease forwards;
+    
+}
+
+.aboutus1 {
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.everyvisit {
+    font-family: Garamond, serif;
+    font-size: 24px;
+    text-align: left;
+    animation: slideLeft 2s ease forwards;
+    margin-right: 50px;
+}
+
+.backbtn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 1s ease;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.backbtn:hover {
+    transform: scale(1.2);
+}
+.backbtn img {
+    width: 100px;
+}
+
+.mandoctorimg {
+    width: 100%;
+    margin-bottom: 130px;
+    animation: fadeIn 2s ease;
+}
+
+.certificandstandsection {
+    background-color: #66666651;
+    padding-top: 50px;
+}
+.certificandstand {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: left;
+    gap:40px;
+}
+.ourteam{
+    display: flex;
+    align-items: left;
+    margin: 50px auto;
+    font-size: 26px;
+    font-family: Garamond, serif;
+    text-align: left;
+}
+
+.list-aboutus hr{
+    height: 2px;
+    border: none;
+    background-color: #092508;
+    width: 60%;
+    margin-left: 50px;
+    margin-right: 300px;
+}
+    
+
+.list-abus{
+display: flex;
+align-items: center;
+font-size: 20px;
+font-family: Garamond, serif;
+justify-content: flex-start;
+gap: 20px;
+width: 60%;
+margin-left:50px;
+border-radius: 50px;
+transition: background-color 0.5s ease;
+}
+
 
