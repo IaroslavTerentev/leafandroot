@@ -6,11 +6,88 @@ body {
     padding: 0;
 }
 
+
+
+
+/*              KEYFRAMES FOR ANIMATIONS               */
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(200px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+@keyframes slideLeft {
+    from {
+        opacity:0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
+/*                                 index.html HOME PAGE                             */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .arrow {
     width: 35px;
     height: 35px;
     object-fit: contain;
-}
+} /* Use it for arrows either black or white anywhere */
+
+
+
+
+
+
+
 
 
 .navbar {
@@ -20,7 +97,7 @@ body {
     height: 70px;
     background-color: #152d1e;
 
-}
+} /* main page navbar */
 .navbar #logo{
     height: 30px;
     margin-left: 20px;
@@ -68,12 +145,15 @@ body {
     font-size: 36px;
     font-family: Garamond, serif;
     animation: slideUp 2s ease forwards;
-}
+} /* reusable if there is something alike on the first parts of your pages, mind that it is moving if you don't want it to move remove animation */
+
+
+
 footer {
     background-color: #051A0C;
     color: white;
-    padding-bottom: 50px;
-}
+    padding-bottom: 50px; 
+} /* footer, each page has it*/
 
 .footer-text {
     display: flex;
@@ -102,6 +182,9 @@ footer {
     margin-top: 20px;
 }
 
+
+
+
 .learn-more {
     position: absolute;
 
@@ -125,49 +208,15 @@ footer {
     color: inherit; 
     transition: background-color 0.5s ease; 
     animation: slideLeft 2s ease forwards;
-}
+} /* learn more button */
 .learn-more:hover {
     background-color: #597c562d;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(200px)
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px)
-    }
-}
-@keyframes slideRight {
-    from {
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px)
-    }
-}
-@keyframes slideLeft {
-    from {
-        opacity:0;
-        transform: translateX(200px);
-    }
-    to {
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+
+
+
+
 
 
 .woman-image img{
@@ -232,7 +281,7 @@ width: 80%;
 margin-left:100px;
 border-radius: 50px;
 transition: background-color 0.5s ease;
-} /* List of advantages on home page */
+} /* List of advantages on home page (including 1 class above and 2 bellow), reusable if you modify it */
 
 .cons_list p {
     text-align: left;
@@ -249,7 +298,19 @@ transition: background-color 0.5s ease;
     gap: 50px;
     width: 85%;
     margin: 50px auto;
-}
+} /*
+
+^
+|
+
+home page form including 11 bellow 
+
+|
+v
+
+*/
+
+
 .form-section {
     background-color: #D6DDCB;
     margin: 0;
@@ -325,7 +386,10 @@ transition: background-color 0.5s ease;
 }
 .submit-btn:hover {
     background-color: #000000;
-}
+} /* ends here */ 
+
+
+
 .needadvice {
     display: flex;
     flex-direction: column;
@@ -335,7 +399,19 @@ transition: background-color 0.5s ease;
     font-size: 28px;
     font-family: Garamond, serif;
     text-align: left;
-}
+} /* reusable */
+
+
+
+
+
+
+
+/*     HEADINGS CLASSES       */
+
+
+
+
 
 
 
@@ -349,7 +425,7 @@ transition: background-color 0.5s ease;
     margin-left:20px;
     animation: slideRight 2s ease forwards;
     
-}
+} /* good for main headings reusable but mind the animation - if needed remove it */
 .heading2 {
     color: #000000;
     font-weight: normal;
@@ -357,7 +433,7 @@ transition: background-color 0.5s ease;
     font-family: Garamond, serif;
     line-height: 1.1;
     margin: 0 0 25px;
-}
+} /* reusable especially with id's */
 .heading2#certifications {
     margin-left:50px;
     margin-right: 350px;
@@ -370,7 +446,30 @@ transition: background-color 0.5s ease;
     margin-left:50px;
     animation: slideRight 2s ease forwards;
     
-}
+} /*reusable mind the animation */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*               About us.html ABOUT US PAGE               */
+
+
+
+
+
+
+
+
+
 
 .aboutus1 {
     display: flex;
@@ -436,7 +535,7 @@ transition: background-color 0.5s ease;
     width: 60%;
     margin-left: 50px;
     margin-right: 300px;
-}
+} /* it is an example of reused cons-list just with different parameters */
     
 
 .list-abus{
