@@ -1,4 +1,4 @@
-CREATE DATABASE Company;
+CREATE DATABASE IF NOT EXISTS Company;
 USE Company;
 CREATE TABLE company_details(
 	company_id INT PRIMARY KEY,
@@ -32,11 +32,20 @@ CREATE TABLE testimonials(
     rating DECIMAL(3,2)
 );
 CREATE TABLE comments(
-	comment_id INT PRIMARY KEY,
+	comment_id INT PRIMARY KEY AUTO_INCREMENT,
 	customer_name VARCHAR(40),
     email VARCHAR(50),
     message VARCHAR(255) NOT NULL,
     submitted_at DATE DEFAULT(CURRENT_DATE)
+);
+
+CREATE TABLE consultations (
+    consultation_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(100),
+    contact VARCHAR(200),
+    plant_problem TEXT,
+    service_need TEXT,
+    submission_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 INSERT INTO company_details

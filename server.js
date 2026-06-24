@@ -1,12 +1,14 @@
 const express = require("express");
+const path = require("path");
 const db = require("./db");
 
 const app = express();
 
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "Pages")));
 
 app.get("/", (req, res) => {
-    res.send("Leaf and Root Server Running");
+    res.sendFile(path.join(__dirname, "Pages", "index.html"));
 });
 
 // CREATE
@@ -88,6 +90,121 @@ app.delete("/comments/:id", (req, res) => {
             }
         }
     );
+});
+
+
+app.get("/services", (req, res) => {
+
+    db.query(
+        "SELECT * FROM services",
+        (err, result) => {
+
+            if (err) {
+                res.status(500).json(err);
+            } else {
+                res.json(result);
+            }
+        }
+    );
+
+});
+
+app.get("/staff", (req, res) => {
+
+    db.query(
+        "SELECT * FROM staff",
+        (err, result) => {
+
+            if (err) {
+                res.status(500).json(err);
+            } else {
+                res.json(result);
+            }
+        }
+    );
+
+});
+
+app.get("/testimonials", (req, res) => {
+
+    db.query(
+        "SELECT * FROM testimonials",
+        (err, result) => {
+
+            if (err) {
+                res.status(500).json(err);
+            } else {
+                res.json(result);
+            }
+        }
+    );
+
+});
+
+app.get("/company", (req, res) => {
+
+    db.query(
+        "SELECT * FROM company_details",
+        (err, result) => {
+
+            if (err) {
+                res.status(500).json(err);
+            } else {
+                res.json(result);
+            }
+        }
+    );
+
+});
+
+app.get("/awards", (req, res) => {
+
+    db.query(
+        "SELECT * FROM awards",
+        (err, result) => {
+
+            if (err) {
+                res.status(500).json(err);
+            } else {
+                res.json(result);
+            }
+        }
+    );
+
+});
+
+app.post("/consultations", (req, res) => {
+
+    const {
+    customer_name,
+    contact,
+    plant_problem,
+    service_need
+} = req.body;
+
+    db.query(
+        `INSERT INTO consultations
+(customer_name, contact, plant_problem, service_need)
+VALUES (?, ?, ?, ?)`,
+        [
+            customer_name,
+            contact,
+            plant_problem,
+            service_need
+        ],
+        (err, result) => {
+
+            if (err) {
+                res.status(500).json(err);
+            } else {
+                res.json({
+                    success: true
+                });
+            }
+
+        }
+    );
+
 });
 
 

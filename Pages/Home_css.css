@@ -1,0 +1,702 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*              KEYFRAMES FOR ANIMATIONS               */
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(200px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+@keyframes slideLeft {
+    from {
+        opacity:0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
+/*                                 index.html HOME PAGE                             */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.arrow {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+} /* Use it for arrows either black or white anywhere */
+
+
+
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    background-color: #152d1e;
+
+} /* main page navbar */
+.navbar #logo{
+    height: 30px;
+    margin-left: 20px;
+    align-self: center;
+}
+.navbar #phone-icon {
+    height: 30px;
+    margin-left: auto;
+    align-self: center;
+    margin-right: 10px;
+}
+.navbar a {
+    color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    text-decoration: none;
+    font-family: Garamond, serif;
+    align-self: center;
+    transition: background-color 0.5s ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar a:hover {
+    background-color: #2c6027;
+    
+}
+
+
+
+.navbar p {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: Garamond, serif;
+    align-self: center;
+    margin-right: 20px;
+}
+
+.expertcare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+    font-size: 36px;
+    font-family: Garamond, serif;
+    animation: slideUp 2s ease forwards;
+} /* reusable if there is something alike on the first parts of your pages, mind that it is moving if you don't want it to move remove animation */
+
+
+
+footer {
+    background-color: #051A0C;
+    color: white;
+    padding-bottom: 50px; 
+} /* footer, each page has it*/
+
+.footer-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 70px;
+}
+
+.footer-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.footer-block p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.footer-img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+
+
+
+.learn-more {
+    position: absolute;
+
+    top: 110px;
+    right: 100px;
+
+    width: 200px;
+    height: 200px;
+
+    border: 2px solid black;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 30px;
+    font-family: Garamond, serif;
+    text-decoration: none; 
+    color: inherit; 
+    transition: background-color 0.5s ease; 
+    animation: slideLeft 2s ease forwards;
+} /* learn more button */
+.learn-more:hover {
+    background-color: #597c562d;
+}
+
+
+
+
+
+
+
+.woman-image img{
+    width: 100%;
+    height: auto;
+    animation: fadeIn 2s ease forwards;
+}
+.whyourplantsaregreener {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    width: 85%;
+    margin: 50px auto;
+}
+
+.plant-text {
+    width: 45%;
+}
+
+
+
+.whyourplantsaregreener #leafandrootoffers {
+    font-size: 28px;
+    font-family: Garamond, serif;
+    text-align: left;
+    margin: 0 0 10px;
+}
+
+.whyourplantsaregreener #plantsarealive {
+    font-size: 30px;
+    font-family: Garamond, serif;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+}
+
+.whyourplantsaregreener img {
+    width: 50%;
+    height: auto;
+}
+
+.list-of-advantages hr{
+    height: 2px;
+    border: none;
+    background-color: #092508;
+    width: 1000px;
+    margin-left: 100px;
+    margin-right: 300px;
+}
+    
+
+.cons_list{
+display: flex;
+align-items: center;
+font-size: 24px;
+font-family: Garamond, serif;
+justify-content: flex-start;
+gap: 20px;
+width: 80%;
+margin-left:100px;
+border-radius: 50px;
+transition: background-color 0.5s ease;
+} /* List of advantages on home page (including 1 class above and 2 bellow), reusable if you modify it */
+
+.cons_list p {
+    text-align: left;
+}
+
+.cons_list:hover {
+    background-color: #2e3c3452;
+}
+
+.form-and-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    width: 85%;
+    margin: 50px auto;
+} /*
+
+^
+|
+
+home page form including 11 bellow 
+
+|
+v
+
+*/
+
+
+.form-section {
+    background-color: #D6DDCB;
+    margin: 0;
+    padding: 80px 0;
+}
+.form-for-regularhelp {
+    width: 55%;
+}
+
+.plant-form {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    font-family: Garamond, serif;
+}
+
+.plant-form label,
+.form-question {
+    font-size: 17px;
+    margin: 0;
+}
+
+.plant-form input[type="text"] {
+    width: 100%;
+    height: 34px;
+    padding: 6px 10px;
+
+    border: 1px solid #777;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+    transition: background-color 0.5s ease;
+}
+.plant-form input[type='text']:hover {
+    background-color: rgba(142, 217, 150, 0.151);
+}
+
+.form-option {
+    height: 95px;
+    padding: 0 12px;
+
+    background-color: #e8e8e8;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #666;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.form-option:hover {
+    background-color: #66666674;
+    color: #434343;
+}
+
+.submit-btn {
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: rgb(30, 40, 31);
+    color: white;
+    transition: background-color 0.5s ease;
+
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #000000;
+} /* ends here */ 
+
+
+
+.needadvice {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 50px auto;
+    width: 80%;
+    font-size: 28px;
+    font-family: Garamond, serif;
+    text-align: left;
+} /* reusable */
+
+
+
+
+
+
+
+/*     HEADINGS CLASSES       */
+
+
+
+
+
+
+
+
+
+.heading1{
+    display: flex;
+    font-weight: normal;
+    font-size: 64px;
+    font-family: Garamond, serif;
+    margin-left:20px;
+    animation: slideRight 2s ease forwards;
+    
+} /* good for main headings reusable but mind the animation - if needed remove it */
+.heading2 {
+    color: #000000;
+    font-weight: normal;
+    font-size: 56px;
+    font-family: Garamond, serif;
+    line-height: 1.1;
+    margin: 0 0 25px;
+} /* reusable especially with id's */
+.heading2#certifications {
+    margin-left:50px;
+    margin-right: 350px;
+}
+.heading3{
+    display: flex;
+    font-weight: normal;
+    font-size: 64px;
+    font-family: Garamond, serif;
+    margin-left:50px;
+    animation: slideRight 2s ease forwards;
+    
+} /*reusable mind the animation */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*               About us.html ABOUT US PAGE               */
+
+
+
+
+
+
+
+
+
+
+.aboutus1 {
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.everyvisit {
+    font-family: Garamond, serif;
+    font-size: 24px;
+    text-align: left;
+    animation: slideLeft 2s ease forwards;
+    margin-right: 50px;
+}
+
+.backbtn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.backbtn:hover {
+    transform: scale(1.2);
+}
+.backbtn img {
+    width: 100px;
+}
+
+.mandoctorimg {
+    width: 100%;
+    margin-bottom: 130px;
+    animation: fadeIn 2s ease;
+}
+
+.certificandstandsection {
+    background-color: #66666651;
+    padding-top: 50px;
+}
+.certificandstand {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: left;
+    gap:40px;
+}
+.ourteam{
+    display: flex;
+    align-items: left;
+    margin: 50px auto;
+    font-size: 26px;
+    font-family: Garamond, serif;
+    text-align: left;
+}
+
+.list-aboutus hr{
+    height: 2px;
+    border: none;
+    background-color: #092508;
+    width: 60%;
+    margin-left: 50px;
+    margin-right: 300px;
+} /* it is an example of reused cons-list just with different parameters */
+    
+
+.list-abus{
+display: flex;
+align-items: center;
+font-size: 20px;
+font-family: Garamond, serif;
+justify-content: flex-start;
+gap: 20px;
+width: 60%;
+margin-left:50px;
+border-radius: 50px;
+transition: background-color 0.5s ease;
+}
+
+
+
+
+/*        EMERGENCY PAGE       */
+
+body.body_emergency {
+    min-height: 100vh;
+    background-image: url("Images/Emergency Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.body_emergency .emergency.page {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 75%;
+    margin: 20px auto 80px auto;
+}
+
+body.body_emergency .plant-form {
+    width: 500px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    font-family: Garamond, serif;
+    animation: fadeIn 1s ease;
+}
+
+body.body_emergency .plant-form input[type="text"] {
+    height: 34px;
+}
+
+body.body_emergency .form-option input {
+    display: none;
+}
+ body.body_emergency .form-option:has(input:checked) {
+    background-color: #20202074;
+    color: #212121;
+}
+
+body.body_emergency .submit-btn {
+    background-color: black;
+    color: white;
+}
+
+body.body_emergency .emergency.page > p {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 64px;
+    line-height: 0.9;
+    margin: 0;
+    padding-top: 10px;
+    max-width: 500px;
+    animation: slideLeft 2s ease forwards;
+}
+
+body.body_emergency .emergency-text {
+    color: white;
+    font-family: Garamond, serif;
+    margin-top: 10px;
+}
+
+body.body_emergency .emergency-title {
+    font-size: 64px;
+    line-height: 0.9;
+    margin: 0;
+    animation: slideLeft 2s ease forwards;
+}
+
+body.body_emergency .emergency-subtitle {
+    font-size: 26px;
+    margin-top: 10px;
+    animation: slideLeft 2s ease forwards;
+}
+
+.popup {
+    display: none;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    padding: 40px;
+
+    background-color: #878d5d;
+    color: white;
+    text-align: center;
+
+    z-index: 1000;
+    animation: fadeIn 0.5s ease;
+}
+
+.checkmark {
+    width: 70px;
+    height: 70px;
+
+    border: 4px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    font-size: 40px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+    border: none;
+    background: none;
+
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.plant-form input[type="text"] {
+    border: 1px solid #777;
+}
+
+
+.plant-form input[type="text"].touched:invalid {
+    border: 2px solid red;
+}
+
+.plant-form input[type="text"].touched:valid {
+    border: 2px solid green;
+}
+
+
+.plant-form input#name.touched:valid {
+    border: 1px solid #777;
+}

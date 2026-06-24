@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Page</title>
+    <link rel="stylesheet" href="Home_css.css">
+</head>
+<body class = "body_emergency">
+    <button class = 'backbtn' onclick = "window.location.href = 'index.html'">
+        <img src="Images/Back white.png" alt="Icon">
+    </button>
+    <div class = "emergency page">
+        <form class="plant-form" action="Emergency room.html" id = "emergency-form">
+
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="contact">Email or Mobile number (use +971 with no spaces for phone number)</label>
+          <input
+    type="text"
+    id="contact"
+    name="contact"
+    placeholder="Email or +971501234567"
+    pattern="^([A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}|\+971(50|52|54|55|56|58)[0-9]{7})$"
+    title="Enter email or UAE phone like +971501234567"
+    required>
+
+        <p class="form-question">What kind of service do you need?</p>
+
+        <label class="form-option">
+            <input type="checkbox" name="service" value="soil">
+            <span>Soil Diagnostics</span>
+        </label>
+
+        <label class="form-option">
+            <input type="checkbox" name="service" value="parasite">
+            <span>Parasite Eradication</span>
+        </label>
+
+        <label class="form-option">
+            <input type="checkbox" name="service" value="moisture">
+            <span>Moisture Stabilisation</span>
+        </label>
+
+        <label class="form-option">
+            <input type="checkbox" name="service" value="general">
+            <span>General Diagnostics</span>
+        </label>
+
+        <input type="submit" value="Submit" class="submit-btn">
+
+        </form>
+        <div class="emergency-text">
+            <p class="emergency-title">Leave your<br>contacts now</p>
+            <p class="emergency-subtitle">And get further recovery plan</p>
+        </div>
+
+    </div>
+
+    <div id="popup" class="popup">
+    <button class="close-btn">&times;</button>
+
+    <div class="checkmark">✓</div>
+
+    <h2>Submitted successfully</h2>
+
+    <p>
+        You will receive a response shortly after
+        submission via e-mail
+    </p>
+    </div>
+
+    <footer>
+    <div class="footer-text">
+        <div class="footer-block">
+            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
+            <p>
+                Leaf & Root Plant Health Co.<br>
+                123 Anywhere St.<br>
+                Any City, ST 12345
+            </p>
+        </div>
+
+        <div class="footer-block">
+            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
+            <p>
+                Tel: +971 4 678-6767<br>
+                Email: leafandroot@reallygreatsite.com<br>
+                Social: @leafandroot
+            </p>
+        </div>
+    </div>
+
+    <img class="footer-img" src="Images/Cool photo.png" alt="Garden">
+</footer>
+<script src="functions.js"></script>
+</body>
+</html>

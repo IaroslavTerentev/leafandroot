@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf and Root | Your best plant hospital</title>
+    <link rel="stylesheet" href="Home_css.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <img src="Images/Logo.png" alt="Logo" id="logo">
+        <a href="index.html"> Home</a> 
+        <a href="About us.html">About us</a> 
+        <a href="Plant ICU.html">Plant ICU</a>
+        <a href="Emergency room.html">Emergency room</a> 
+        <a href="Recovery room.html">Recovery room</a>
+        <img src="Images/Phone icon.png" alt = "Phone icon" id = "phone-icon"> 
+        <p>+971 4 678-6767</p>
+    </div>
+
+<div class = "home-main-content">
+    <div class="heading1">
+        <p>Healthier. Greener. Instantly better.</p>
+    </div>
+    <div class="woman-image">
+            <img src="Images/Woman with flower.png" alt="Woman with flower">
+    </div>
+    <a class = "learn-more" href="#slidetoform"> Learn <br> more </a>
+    <div class = "expertcare">
+        <img class = "arrow" src="Images/Black arrow.png" alt="Arrow">
+        <p>EXPERT CARE FOR YOUR INDOOR AND OUTDOOR PLANTS</p>
+    </div>
+    <div class="whyourplantsaregreener">
+        <div class="plant-text">
+            <p class="heading2">Why our plants<br>are greener</p>
+
+            <p id="leafandrootoffers">
+            Leaf & Root offers help from a team of professional volunteers who are always ready to help save out clients’ plants
+            </p>
+
+            <p id="plantsarealive">Plants are also alive and are our friends</p>
+        </div>
+
+        <img src="Images/Many flowers.png" alt="Many flowers">
+    </div>
+    <div class = 'list-of-advantages'>
+    <hr>
+        <div class = "cons_list">
+            <img class = "arrow" src="Images/Black arrow.png" alt="Arrow">
+            <p> Licensed, insured, and experienced team</p>
+
+        </div>
+    <hr>
+        <div class = "cons_list">
+            <img class = "arrow" src="Images/Black arrow.png" alt="Arrow">
+            <p> Quick response for the most urgent queries</p>
+
+        </div>
+    <hr>
+        <div class = "cons_list">
+            <img class = "arrow" src="Images/Black arrow.png" alt="Arrow">
+            <p> Ensured quality of the provided information</p>
+
+        </div>
+    <hr>
+        <div class = "cons_list">
+            <img class = "arrow" src="Images/Black arrow.png" alt="Arrow">
+            <p>Reasonable prices</p>
+
+        </div>
+    <hr>
+
+    </div>
+    <section class = "form-section">  
+    <div class="form-and-text">
+        <div class="needadvice">
+            <p id="slidetoform" class="heading2">Need advice with a new friend?</p>
+            <p> If you’re not in a hurry, just got your new <br> plant, and want to learn to care about it,<br> feel free to leave your question</p>
+            <p> If you need urgent medical help for your <br> green friend, select the appropriate option</p>
+        </div>
+        <div class="form-for-regularhelp">
+        <form action="index.html" class="plant-form" id = "non-emergency-form">
+
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Email or Mobile number (use +971 with no spaces for phone number)</label>
+            <input
+    type="text"
+    id="contact"
+    name="contact"
+    placeholder="Email or +971501234567"
+    pattern="^([A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}|\+971(50|52|54|55|56|58)[0-9]{7})$"
+    title="Enter email or UAE phone like +971501234567"
+    required>
+
+            <p class="form-question">What are you most interested in?</p>
+
+            <label class="form-option">
+                <input type="checkbox" name="interest" value="care">
+                <span>How do I take care of my plant</span>
+            </label>
+
+            <label class="form-option">
+                <input type="checkbox" name="interest" value="identify">
+                <span>I need to find out what my plant is</span>
+            </label>
+
+            <label class="form-option">
+                <input type="checkbox" name="interest" value="sick">
+                <span>My plant is sick/dying, I need help</span>
+            </label>
+
+            <input type="submit" value="Submit" class="submit-btn">
+            
+
+        </form>
+        </div>
+    </div>    
+    </section>
+    
+</div>
+<div id="popup" class="popup">
+<button class="close-btn">&times;</button>
+
+<div class="checkmark">✓</div>
+
+<h2>Submitted successfully</h2>
+
+<p>
+    You will receive a response shortly after
+    submission via e-mail
+</p>
+</div>
+
+<footer>
+    <div class="footer-text">
+        <div class="footer-block">
+            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
+            <p>
+                Leaf & Root Plant Health Co.<br>
+                123 Anywhere St.<br>
+                Any City, ST 12345
+            </p>
+        </div>
+
+        <div class="footer-block">
+            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
+            <p>
+                Tel: +971 4 678-6767<br>
+                Email: leafandroot@reallygreatsite.com<br>
+                Social: @leafandroot
+            </p>
+        </div>
+    </div>
+
+    <img class="footer-img" src="Images/Cool photo.png" alt="Garden">
+</footer>
+<script src="functions.js"></script>
+</body>
+</html>
