@@ -1,0 +1,393 @@
+.aboutus1 {
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.everyvisit {
+    font-family: Garamond, serif;
+    font-size: 24px;
+    text-align: left;
+    animation: slideLeft 2s ease forwards;
+    margin-right: 50px;
+}
+
+.backbtn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.backbtn:hover {
+    transform: scale(1.2);
+}
+.backbtn img {
+    width: 100px;
+}
+
+.mandoctorimg {
+    width: 100%;
+    margin-bottom: 130px;
+    animation: fadeIn 2s ease;
+}
+
+.certificandstandsection {
+    background-color: #66666651;
+    padding-top: 50px;
+}
+.certificandstand {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: left;
+    gap:40px;
+}
+.ourteam{
+    display: flex;
+    align-items: left;
+    margin: 50px auto;
+    font-size: 26px;
+    font-family: Garamond, serif;
+    text-align: left;
+}
+
+.list-aboutus hr{
+    height: 2px;
+    border: none;
+    background-color: #092508;
+    width: 60%;
+    margin-left: 50px;
+    margin-right: 300px;
+} /* it is an example of reused cons-list just with different parameters */
+    
+
+.list-abus{
+display: flex;
+align-items: center;
+font-size: 20px;
+font-family: Garamond, serif;
+justify-content: flex-start;
+gap: 20px;
+width: 60%;
+margin-left:50px;
+border-radius: 50px;
+transition: background-color 0.5s ease;
+}
+
+
+
+
+/* ── Team Carousel ────────────────────────────────────────────── */
+       
+
+.ourteamsection {
+            padding: 60px 20px 80px;
+        }
+ 
+        .meetteam {
+            font-family: Garamond, Georgia, serif;
+            font-weight: 400;
+            font-size: 44px;
+            text-align: center;
+            margin: 0 0 50px;
+            color: #000;
+            letter-spacing: 0.02em;
+        }
+ 
+        .team-carousel-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            width: 90%;
+            margin: 0 auto;
+            min-height: 380px;
+        }
+ 
+        /* Nav arrows */
+        .carousel-btn {
+            background: none;
+            border: 1.5px solid #152d1e;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #152d1e;
+            flex-shrink: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-size: 22px;
+            font-family: sans-serif;
+        }
+        .carousel-btn:hover {
+            background-color: #152d1e;
+            color: #fff;
+        }
+        .carousel-btn:disabled {
+            opacity: 0.2;
+            cursor: default;
+        }
+ 
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #152d1e;
+            margin: 0 20px;
+        }
+
+
+        .team-track {
+            display: flex;
+            gap: 120px;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            overflow: hidden;
+        }
+ 
+        /* Individual card slot */
+        .team-slot {
+            flex: 0 0 200px;
+            transition: flex-basis 0.4s ease;
+        }
+        .team-slot.center {
+            flex: 0 0 220px;
+        }
+ 
+        /* Flip container */
+        .flip-container {
+            width: 100%;
+            height: 280px;
+            perspective: 900px;
+            cursor: pointer;
+        }
+        .team-slot.center .flip-container {
+            height: 300px;
+        }
+ 
+        .flipper {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .flip-container:hover .flipper,
+        .flip-container:focus .flipper {
+            transform: rotateY(180deg);
+        }
+ 
+        /* Shared face styles */
+        .card-face {
+            position: absolute;
+            inset: 0;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            overflow: hidden;
+        }
+ 
+        /* FRONT — photo */
+        .card-front {
+            background: #e8ede5;
+        }
+        .card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+        }
+        /* Placeholder when no photo */
+        .card-front-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f6f6f6;
+        }
+        .card-initials {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Garamond, serif;
+            font-size: 32px;
+            color: #fff;
+        }
+ 
+        /* BACK — info panel */
+        .card-back {
+            transform: rotateY(180deg);
+            background: #152d1e;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 18px;
+            text-align: center;
+            gap: 8px;
+        }
+        .card-back-name {
+            font-family: Garamond, serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+        }
+        .card-back-role {
+            font-family: Garamond, serif;
+            font-size: 16px;
+            color: #acf39a;
+            font-style: italic;
+            margin: 0;
+        }
+        .card-back-bio {
+            font-family: Garamond, serif;
+            font-size: 14px;
+            color: #cde0c8;
+            line-height: 1.6;
+            margin: 6px 0;
+        }
+        .card-back-expertise {
+            font-family: Garamond, serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7ec87e;
+            margin: 4px 0 0;
+        }
+ 
+        /* Name label beneath card */
+        .team-member-name {
+            text-align: center;
+            font-family: Garamond, serif;
+            font-size: 15px;
+            color: #555;
+            margin-top: 10px;
+        }
+ 
+        /* Dot indicators */
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 28px;
+        }
+        .carousel-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            border: none;
+            background: #c0c0b8;
+            cursor: pointer;
+            padding: 0;
+            transition: background 0.2s ease;
+        }
+        .carousel-dot.active {
+            background: #152d1e;
+        }
+ 
+        /* Hover hint */
+        .team-hint {
+            text-align: center;
+            font-family: Garamond, serif;
+            font-size: 14px;
+            color: #999;
+            margin-top: 12px;
+        }
+
+.mandoctorimg {
+    width: 100%;
+    margin-bottom: 130px;
+    animation: fadeIn 2s ease;
+}
+
+.certificandstandsection {
+    background-color: #66666651;
+    padding-top: 50px;
+}
+.certificandstand {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: left;
+    gap:40px;
+}
+.ourteam{
+    display: flex;
+    align-items: left;
+    margin: 50px auto;
+    font-size: 26px;
+    font-family: Garamond, serif;
+    text-align: left;
+}
+
+.list-aboutus hr{
+    height: 2px;
+    border: none;
+    background-color: #092508;
+    width: 60%;
+    margin-left: 50px;
+    margin-right: 300px;
+} /* it is an example of reused cons-list just with different parameters */
+    
+
+.list-abus{
+display: flex;
+align-items: center;
+font-size: 20px;
+font-family: Garamond, serif;
+justify-content: flex-start;
+gap: 20px;
+width: 60%;
+margin-left:50px;
+border-radius: 50px;
+transition: background-color 0.5s ease;
+}
+
+
+.ourteamsection {
+    background-color: #66666651;
+    padding-top: 50px;
+}
+
+.team-track {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.team-track.changing-left {
+    opacity: 0;
+    transform: translateX(-40px);
+}
+
+.team-track.changing-right {
+    opacity: 0;
+    transform: translateX(40px);
+}
+
+.team-slot {
+    animation: cardFadeIn 0.4s ease forwards;
+}
+
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

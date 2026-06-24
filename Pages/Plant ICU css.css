@@ -1,0 +1,289 @@
+/* =========================
+   PLANT ICU PAGE
+   ========================= */
+
+.planticu-main-content{
+    background-color: #efefef;
+    padding-bottom: 80px;
+}
+
+.planticu-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin:0 50px;
+}
+
+.planticu-title p{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.planticu-description{
+    width:450px;
+
+    margin:0;
+
+    font-size:24px;
+    line-height:1.4;
+
+    text-align:left;
+    font-family:Garamond, serif;
+    animation: slideLeft 2s ease forwards;
+}
+
+.planticu-hero-image{
+    width:100%;
+    margin-top:20px;
+    animation: fadeIn 1s ease;
+}
+
+.planticu-hero-image img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+}
+
+/* OUR SERVICES BUTTON */
+
+.services-button-section{
+    margin-top:30px;
+    margin-left:50px;
+}
+
+.services-button{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:none;
+    border:1px solid black;
+    border-radius:30px;
+
+    padding:10px 18px;
+
+    font-size:20px;
+    font-family:Garamond, serif;
+
+    cursor:pointer;
+    animation: slideRight 2s ease forwards;
+}
+
+.services-button .arrow{
+    width:25px;
+    height:25px;
+}
+
+/* BASIC SERVICES */
+
+.basic-services{
+    margin-top:50px;
+}
+
+.basic-services .heading2{
+    margin-left:50px;
+    margin-bottom:0;
+}
+
+.basic-services-subtitle{
+    margin-left:50px;
+    margin-top:5px;
+
+    font-size:28px;
+    font-family:Garamond, serif;
+}
+
+.basic-services-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    margin-left:50px;
+    margin-right:50px;
+}
+
+/* LARGE CARDS */
+
+.service-card-large{
+    width:350px;
+    background-color:#d6d6d6;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.large-card-title{
+    font-size:36px;
+    font-family:Garamond, serif;
+
+    line-height:1.05;
+
+    padding:20px;
+    min-height:90px;
+}
+
+.service-card-large img{
+    width:100%;
+    height:130px;
+    object-fit:cover;
+    display:block;
+}
+
+.large-card-content{
+    padding:15px 20px 20px;
+}
+
+.large-card-content p{
+    min-height:110px;
+    line-height:1.4;
+}
+
+.get-now-button{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    width:140px;
+    height:40px;
+
+    background:none;
+    border:1px solid black;
+    border-radius:25px;
+
+    padding:0 12px;
+
+    cursor:pointer;
+}
+
+.get-now-button .arrow{
+    width:22px;
+    height:22px;
+}
+
+/* SIDE TEXT */
+
+.services-text{
+    width:325px;
+
+    margin-top:50px;
+
+    font-size:20px;
+    line-height:1.5;
+}
+
+.services-text p{
+    margin-bottom:60px;
+}
+
+/* PLANT HEALTH */
+
+.plant-health-services{
+    margin-top:90px;
+}
+
+#plant-health-heading{
+    margin-left:50px;
+    margin-bottom:40px;
+}
+
+/* SMALL CARD GRID */
+
+.health-services-grid{
+    display:flex;
+    justify-content:space-between;
+    gap:25px;
+    margin-left:50px;
+    margin-right:50px;
+    flex-wrap:nowrap;
+}
+
+/* SMALL CARDS */
+
+.service-card-small{
+    width:210px;
+    background:#d6d6d6;
+    border-radius:10px;
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.small-card-title{
+    padding:15px;
+    min-height:75px;
+
+    font-size:24px;
+    line-height:1.1;
+    font-family:Garamond, serif;
+}
+
+.service-card-small img{
+    width:100%;
+    height:90px;
+    object-fit:cover;
+    display:block;
+}
+
+.service-card-small p{
+    padding:10px 15px;
+    line-height:1.35;
+    min-height:120px;
+}
+
+.small-get-now-button{
+    width:110px;
+    height:32px;
+
+    margin:10px 15px 15px;
+
+    border:1px solid black;
+    border-radius:20px;
+
+    background:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 10px;
+
+    cursor:pointer;
+}
+
+.small-get-now-button .arrow{
+    width:18px;
+    height:18px;
+}
+
+.backbtn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.backbtn:hover {
+    transform: scale(1.2);
+}
+.backbtn img {
+    width: 100px;
+}
+
+.service-price {
+    min-height: 0 !important;
+    margin: 10px 0 15px 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.small-price {
+    padding: 0 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Garamond, serif;
+}

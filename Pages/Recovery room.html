@@ -3,35 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recovery Room & Testimonials</title>
+
     <link rel="stylesheet" href="Home_css.css">
+    <link rel="stylesheet" href="Recovery page css.css">
 </head>
+
 <body>
-    <button class = 'backbtn' onclick = "window.location.href = 'index.html'">
-        <img src="Images/Back.png" alt="Icon">
-    </button>
-    <footer>
-    <div class="footer-text">
-        <div class="footer-block">
-            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
-            <p>
-                Leaf & Root Plant Health Co.<br>
-                123 Anywhere St.<br>
-                Any City, ST 12345
-            </p>
+
+<button class="backbtn" onclick="window.location.href = 'index.html'">
+    <img src="Images/Back.png" alt="Icon">
+</button>
+
+<div class="container">
+
+    <section class="recovery-section">
+
+        <div class="recovery-header">
+            <h1>Recovery room</h1>
+            <p>Leave a comment on your experience with us</p>
         </div>
 
-        <div class="footer-block">
-            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
-            <p>
-                Tel: +971 4 678-6767<br>
-                Email: leafandroot@reallygreatsite.com<br>
-                Social: @leafandroot
-            </p>
-        </div>
-    </div>
+        <div class="recovery-grid">
 
-    <img class="footer-img" src="Images/Cool photo.png" alt="Garden">
-</footer>
+            <div class="card-form">
+                <h2>Comment</h2>
+
+                <form id="comment-form">
+
+                    <div class="form-group">
+                        <label for="comment-name">Full name</label>
+                        <input type="text" id="comment-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment-query">What was your query?</label>
+                        <input type="text" id="comment-query" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment-experience">How was it?</label>
+                        <textarea id="comment-experience" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Submit</button>
+
+                    <p id="comment-message" class="form-message"></p>
+
+                </form>
+            </div>
+
+            <div class="right-column">
+
+                <img src="Images/1.png" alt="Fern Plant" class="fern-image">
+
+                <div class="mood-card">
+                    <h2>How are you feeling?</h2>
+
+                    <div class="emoji-row">
+                        <button type="button" class="emoji-btn">🙁</button>
+                        <button type="button" class="emoji-btn">🙁</button>
+                        <button type="button" class="emoji-btn">😐</button>
+                        <button type="button" class="emoji-btn">🙂</button>
+                        <button type="button" class="emoji-btn">😀</button>
+                    </div>
+
+                    <button type="button" class="btn-submit">SUBMIT</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="testimonials-section">
+
+        <h1>What our clients say</h1>
+
+        <p id="testimonials-loading">Loading testimonials from database...</p>
+        <p id="testimonials-error" style="display: none;"></p>
+
+        <div id="testimonials-container"></div>
+
+    </section>
+    <section class="comments-section">
+
+    <h1>Customer comments</h1>
+
+    <p id="comments-loading">Loading comments from database...</p>
+    <p id="comments-error" style="display: none;"></p>
+
+    <div id="comments-container"></div>
+
+    </section>
+
+</div>
+
+<script src="recovery.js"></script>
+
 </body>
 </html>

@@ -14,14 +14,15 @@ app.get("/", (req, res) => {
 // CREATE
 app.post("/comments", (req, res) => {
 
-    const { customer_name, email, message } = req.body;
+    const { customer_name, customer_query, message } = req.body;
 
     db.query(
-        "INSERT INTO comments (customer_name, email, message) VALUES (?, ?, ?)",
-        [customer_name, email, message],
+        "INSERT INTO comments (customer_name, customer_query, message) VALUES (?, ?, ?)",
+        [customer_name, customer_query, message],
         (err, result) => {
 
             if (err) {
+                console.log(err);
                 res.status(500).json(err);
             } else {
                 res.json({
@@ -37,7 +38,7 @@ app.post("/comments", (req, res) => {
 app.get("/comments", (req, res) => {
 
     db.query(
-        "SELECT * FROM comments",
+        "SELECT * FROM comments ORDER BY comment_id ASC",
         (err, results) => {
 
             if (err) {
@@ -206,6 +207,8 @@ VALUES (?, ?, ?, ?)`,
     );
 
 });
+
+app.use('/Images', express.static(path.join(__dirname, 'Pages', 'Images')));
 
 
 app.listen(3000, () => {

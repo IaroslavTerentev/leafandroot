@@ -4,78 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
+
     <link rel="stylesheet" href="Home_css.css">
+    <link rel="stylesheet" href="about us.css">
 </head>
+
 <body>
-    <button class = 'backbtn' onclick = "window.location.href = 'index.html'">
-        <img src="Images/Back.png" alt="Icon">
+
+    <button class="backbtn" onclick="window.location.href = 'index.html'">
+        <img src="Images/Back.png" alt="Back">
     </button>
-    <div class = "aboutus1">
+
+    <div class="aboutus1">
         <div>
-            <p class = "heading3">Care is a the root <br>of what we do</p>
+            <p class="heading3">
+                Care is at the root <br>
+                of what we do
+            </p>
         </div>
+
         <div>
-            <p class = "everyvisit">Every visit follows a detailed care plan that <br> 
+            <p class="everyvisit">
+                Every visit follows a detailed care plan that <br>
                 leaves your big or small garden tidy,
-                <br>healthy, and secure</p>
+                <br>healthy, and secure
+            </p>
         </div>
     </div>
-    <img src = "Images/Man doctor.png" class = "mandoctorimg">
-    <section class = 'certificandstandsection'>
-        <div class = 'certificandstand'>
+
+    <img src="Images/Man doctor.png" class="mandoctorimg" alt="Plant doctor">
+
+    <section class="certificandstandsection">
+
+        <div class="certificandstand">
+
             <div>
-                <p class = "heading2" id = "certifications">Certifications & <br> standarts</p>
-            </div>
-            <div>
-                <p class="ourteam">Our team are trained volunteers
-                    <br>in proper lifting, green waste
-                    <br> management, and site safety
+                <p class="heading2" id="certifications">
+                    Certifications & <br>
+                    standards
                 </p>
             </div>
+
             <div>
-                <p class = 'ourteam'>
+                <p class="ourteam">
+                    Our team are trained volunteers
+                    <br>in proper lifting, green waste
+                    <br>management, and site safety
+                </p>
+            </div>
+
+            <div>
+                <p class="ourteam">
                     We look after your garden like
-                    <br> it’s our own—so you can relax
+                    <br>it’s our own—so you can relax
                     <br>knowing it’s in good hands
                 </p>
             </div>
+
         </div>
-        <div class = 'list-aboutus'>
+
+        <div class="list-aboutus">
+
             <hr>
-            <div class = 'list-abus'>
-                <img class = "arrow" src="Images/Black arrow.png" alt="Arrow">
-                <p> FULLY INSURED AND EXPERIENCED TEAM</p>
+
+            <div class="list-abus">
+                <img class="arrow" src="Images/Black arrow.png" alt="Arrow">
+                <p>FULLY INSURED AND EXPERIENCED TEAM</p>
             </div>
+
             <hr>
-            <div class = 'list-abus'>
-                <img class = "arrow" src="Images/Black arrow.png" alt="Arrow">
-                <p> CONSISTENT SCHEDULES, CLEAR COMMUNICATION, AND QUALITY CHECKS.</p>
+
+            <div class="list-abus">
+                <img class="arrow" src="Images/Black arrow.png" alt="Arrow">
+                <p>CONSISTENT SCHEDULES, CLEAR COMMUNICATION, AND QUALITY CHECKS.</p>
             </div>
+
             <hr>
+
         </div>
+
     </section>
+
+    <section class="ourteamsection">
+
+        <p class="meetteam" id="ourteam">Meet our team</p>
+
+        <div id="team-loading" class="team-hint">
+            Loading team from database...
+        </div>
+
+        <p id="team-error" class="team-hint"></p>
+
+        <div id="team-carousel" style="display: none;">
+
+            <div class="team-carousel-wrapper">
+
+                <button class="carousel-btn" id="team-prev" aria-label="Previous team member">
+                    &#8592;
+                </button>
+
+                <div class="team-track" id="team-track"></div>
+
+                <button class="carousel-btn" id="team-next" aria-label="Next team member">
+                    &#8594;
+                </button>
+
+            </div>
+
+            <div class="carousel-dots" id="team-dots"></div>
+
+            <p class="team-hint">Hover over a photo to learn more</p>
+
+        </div>
+
+    </section>
+
     <footer>
-    <div class="footer-text">
-        <div class="footer-block">
-            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
-            <p>
-                Leaf & Root Plant Health Co.<br>
-                123 Anywhere St.<br>
-                Any City, ST 12345
-            </p>
+
+        <div class="footer-text">
+
+            <div class="footer-block">
+                <img src="Images/White arrow.png" class="arrow" alt="Arrow">
+                <p>
+                    Leaf & Root Plant Health Co.<br>
+                    123 Anywhere St.<br>
+                    Any City, ST 12345
+                </p>
+            </div>
+
+            <div class="footer-block">
+                <img src="Images/White arrow.png" class="arrow" alt="Arrow">
+                <p>
+                    Tel: +971 4 678-6767<br>
+                    Email: leafandroot@reallygreatsite.com<br>
+                    Social: @leafandroot
+                </p>
+            </div>
+
         </div>
 
-        <div class="footer-block">
-            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
-            <p>
-                Tel: +971 4 678-6767<br>
-                Email: leafandroot@reallygreatsite.com<br>
-                Social: @leafandroot
-            </p>
-        </div>
-    </div>
+        <img class="footer-img" src="Images/Cool photo.png" alt="Garden">
 
-    <img class="footer-img" src="Images/Cool photo.png" alt="Garden">
-</footer>
+    </footer>
+
+    <script src = 'about us.js'>
+        
+    </script>
+
 </body>
 </html>

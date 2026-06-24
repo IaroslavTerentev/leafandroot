@@ -5,274 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plant ICU</title>
     <link rel="stylesheet" href="Home_css.css">
-
-<style>
-/* =========================
-   PLANT ICU PAGE
-   ========================= */
-
-.planticu-main-content{
-    background-color: #efefef;
-    padding-bottom: 80px;
-}
-
-.planticu-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    margin:0 50px;
-}
-
-.planticu-title p{
-    margin-top:0;
-    margin-bottom:0;
-}
-
-.planticu-description{
-    width:450px;
-
-    margin:0;
-
-    font-size:24px;
-    line-height:1.4;
-
-    text-align:left;
-    font-family:Garamond, serif;
-}
-
-.planticu-hero-image{
-    width:100%;
-    margin-top:20px;
-}
-
-.planticu-hero-image img{
-    width:100%;
-    height:420px;
-    object-fit:cover;
-    display:block;
-}
-
-/* OUR SERVICES BUTTON */
-
-.services-button-section{
-    margin-top:30px;
-    margin-left:50px;
-}
-
-.services-button{
-    display:flex;
-    align-items:center;
-    gap:10px;
-
-    background:none;
-    border:1px solid black;
-    border-radius:30px;
-
-    padding:10px 18px;
-
-    font-size:20px;
-    font-family:Garamond, serif;
-
-    cursor:pointer;
-}
-
-.services-button .arrow{
-    width:25px;
-    height:25px;
-}
-
-/* BASIC SERVICES */
-
-.basic-services{
-    margin-top:50px;
-}
-
-.basic-services .heading2{
-    margin-left:50px;
-    margin-bottom:0;
-}
-
-.basic-services-subtitle{
-    margin-left:50px;
-    margin-top:5px;
-
-    font-size:28px;
-    font-family:Garamond, serif;
-}
-
-.basic-services-content{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-
-    margin-left:50px;
-    margin-right:50px;
-}
-
-/* LARGE CARDS */
-
-.service-card-large{
-    width:350px;
-    background-color:#d6d6d6;
-    border-radius:10px;
-    overflow:hidden;
-}
-
-.large-card-title{
-    font-size:36px;
-    font-family:Garamond, serif;
-
-    line-height:1.05;
-
-    padding:20px;
-    min-height:90px;
-}
-
-.service-card-large img{
-    width:100%;
-    height:130px;
-    object-fit:cover;
-    display:block;
-}
-
-.large-card-content{
-    padding:15px 20px 20px;
-}
-
-.large-card-content p{
-    min-height:110px;
-    line-height:1.4;
-}
-
-.get-now-button{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    width:140px;
-    height:40px;
-
-    background:none;
-    border:1px solid black;
-    border-radius:25px;
-
-    padding:0 12px;
-
-    cursor:pointer;
-}
-
-.get-now-button .arrow{
-    width:22px;
-    height:22px;
-}
-
-/* SIDE TEXT */
-
-.services-text{
-    width:325px;
-
-    margin-top:50px;
-
-    font-size:20px;
-    line-height:1.5;
-}
-
-.services-text p{
-    margin-bottom:60px;
-}
-
-/* PLANT HEALTH */
-
-.plant-health-services{
-    margin-top:90px;
-}
-
-#plant-health-heading{
-    margin-left:50px;
-    margin-bottom:40px;
-}
-
-/* SMALL CARD GRID */
-
-.health-services-grid{
-    display:flex;
-    justify-content:space-between;
-    gap:25px;
-    margin-left:50px;
-    margin-right:50px;
-    flex-wrap:nowrap;
-}
-
-/* SMALL CARDS */
-
-.service-card-small{
-    width:210px;
-    background:#d6d6d6;
-    border-radius:10px;
-    overflow:hidden;
-
-    display:flex;
-    flex-direction:column;
-}
-
-.small-card-title{
-    padding:15px;
-    min-height:75px;
-
-    font-size:24px;
-    line-height:1.1;
-    font-family:Garamond, serif;
-}
-
-.service-card-small img{
-    width:100%;
-    height:90px;
-    object-fit:cover;
-    display:block;
-}
-
-.service-card-small p{
-    padding:10px 15px;
-    line-height:1.35;
-    min-height:120px;
-}
-
-.small-get-now-button{
-    width:110px;
-    height:32px;
-
-    margin:10px 15px 15px;
-
-    border:1px solid black;
-    border-radius:20px;
-
-    background:none;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    padding:0 10px;
-
-    cursor:pointer;
-}
-
-.small-get-now-button .arrow{
-    width:18px;
-    height:18px;
-}
-</style>
-
+    <link rel="stylesheet" href="Plant ICU css.css">
+    
 </head>
-<body>
-    <button class = 'backbtn' onclick = "window.location.href = 'index.html'">
+    <body>
+    <button class="backbtn" onclick="window.location.href = 'index.html'">
         <img src="Images/Back.png" alt="Icon">
     </button>
 
     <div class="planticu-main-content">
 
         <div class="planticu-header">
-
             <div class="planticu-title">
                 <p class="heading3">Plant ICU</p>
             </div>
@@ -283,7 +26,6 @@
                     And we know how to help it
                 </p>
             </div>
-
         </div>
 
         <div class="planticu-hero-image">
@@ -291,216 +33,55 @@
         </div>
 
         <div class="services-button-section">
-            <button class="services-button">
+            <button class="services-button" onclick="document.getElementById('services-area').scrollIntoView({behavior:'smooth'});">
                 Our services
                 <img src="Images/Black arrow.png" class="arrow" alt="Arrow">
             </button>
         </div>
 
-        <div class="basic-services">
+        <div id="services-area" class="basic-services">
+            <p class="heading2">Let's turn over a new leaf</p>
+            <p class="basic-services-subtitle">Basic services</p>
 
-            <p class="heading2">
-                Let's turn over a new leaf
-            </p>
+            <p id="services-loading" class="loading-message">Loading services from database...</p>
+            <p id="services-error" class="error-message" style="display:none;"></p>
 
-            <p class="basic-services-subtitle">
-                Basic services
-            </p>
-
-            <div class="basic-services-content">
-
-                <div class="service-card-large">
-
-                    <div class="large-card-title">
-                        Care<br>
-                        Instructions
-                    </div>
-
-                    <img src="Images/lawn-mower.png" alt="Care Instructions">
-
-                    <div class="large-card-content">
-
-                        <p>
-                            If you bought a new plant, but don't know how to take care of it,
-                            and the info on the internet differs, this service is for you
-                        </p>
-
-                        <button class="get-now-button">
-                            Get now
-                            <img src="Images/Black arrow.png" class="arrow" alt="Arrow">
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div class="service-card-large">
-
-                    <div class="large-card-title">
-                        Plant<br>
-                        identification
-                    </div>
-
-                    <img src="Images/lawn.png" alt="Plant Identification">
-
-                    <div class="large-card-content">
-
-                        <p>
-                            Saved, got gifted or just bought a new plant you don't even know
-                            the name of? We will help you with that
-                        </p>
-
-                        <button class="get-now-button">
-                            Get now
-                            <img src="Images/Black arrow.png" class="arrow" alt="Arrow">
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div class="services-text">
-
-                    <p>
-                        <strong>Basic services</strong> will help you get familiar
-                        with your new green family member
-                    </p>
-
-                    <br><br>
-
-                    <p>
-                        <strong>Plant health services</strong> are for cases when your green friend
-                        does not feel well
-                    </p>
-
-                </div>
-
-            </div>
-
+            <div class="basic-services-content" id="basic-services-container"></div>
         </div>
 
         <div class="plant-health-services">
-
-            <p class="heading2" id="plant-health-heading">
-                Plant health services
-            </p>
-
-            <div class="health-services-grid">
-
-                <div class="service-card-small">
-
-                    <div class="small-card-title">
-                        Soil Diagnostics
-                    </div>
-
-                    <img src="Images/lawn-mower.png" alt="Soil Diagnostics">
-
-                    <p>
-                        Send a detailed, high-quality photo to our doctors
-                        to get a review of your plant's soil
-                    </p>
-
-                    <button class="small-get-now-button">
-                        Get now
-                        <img src="Images/Black arrow.png" class="arrow" alt="Arrow">
-                    </button>
-
-                </div>
-
-                <div class="service-card-small">
-
-                    <div class="small-card-title">
-                        Parasite<br>
-                        Eradication
-                    </div>
-
-                    <img src="Images/lawn.png" alt="Parasite Eradication">
-
-                    <p>
-                        In case of bothersome parasites, our doctors will help identify
-                        their nature and how to get rid of them
-                    </p>
-
-                    <button class="small-get-now-button">
-                        Get now
-                        <img src="Images/Black arrow.png" class="arrow" alt="Arrow">
-                    </button>
-
-                </div>
-
-                <div class="service-card-small">
-
-                    <div class="small-card-title">
-                        Moisture<br>
-                        Stabilisation<br>
-                        Protocols
-                    </div>
-
-                    <img src="Images/tending.png" alt="Moisture">
-
-                    <p>
-                        You over- or underestimated your plant?
-                        Don't worry, it doesn't always mean the end
-                    </p>
-
-                    <button class="small-get-now-button">
-                        Get now
-                        <img src="Images/Black arrow.png" class="arrow" alt="Arrow">
-                    </button>
-
-                </div>
-
-                <div class="service-card-small">
-
-                    <div class="small-card-title">
-                        General<br>
-                        Diagnostics
-                    </div>
-
-                    <img src="Images/tending.png" alt="General Diagnostics">
-
-                    <p>
-                        If you don't know what your plant needs,
-                        but it is visibly sick or dying,
-                        reach out to this service
-                    </p>
-
-                    <button class="small-get-now-button">
-                        Get now
-                        <img src="Images/Black arrow.png" class="arrow" alt="Arrow">
-                    </button>
-
-                </div>
-
-            </div>
-
+            <p class="heading2" id="plant-health-heading">Plant health services</p>
+            <div class="health-services-grid" id="health-services-grid"></div>
         </div>
 
     </div>
-
 
     <footer>
-    <div class="footer-text">
-        <div class="footer-block">
-            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
-            <p>
-                Leaf & Root Plant Health Co.<br>
-                123 Anywhere St.<br>
-                Any City, ST 12345
-            </p>
+        <div class="footer-text">
+            <div class="footer-block">
+                <img src="Images/White arrow.png" class="arrow" alt="Arrow">
+                <p>
+                    Leaf & Root Plant Health Co.<br>
+                    123 Anywhere St.<br>
+                    Any City, ST 12345
+                </p>
+            </div>
+
+            <div class="footer-block">
+                <img src="Images/White arrow.png" class="arrow" alt="Arrow">
+                <p>
+                    Tel: +971 4 678-6767<br>
+                    Email: leafandroot@reallygreatsite.com<br>
+                    Social: @leafandroot
+                </p>
+            </div>
         </div>
 
-        <div class="footer-block">
-            <img src="Images/White arrow.png" class="arrow" alt="Arrow">
-            <p>
-                Tel: +971 4 678-6767<br>
-                Email: leafandroot@reallygreatsite.com<br>
-                Social: @leafandroot
-            </p>
-        </div>
-    </div>
+        <img class="footer-img" src="Images/Cool photo.png" alt="Garden">
+    </footer>
 
-    <img class="footer-img" src="Images/Cool photo.png" alt="Garden">
-</footer>
+<script src = "plant-icu.js">
+</script>
+
 </body>
 </html>
